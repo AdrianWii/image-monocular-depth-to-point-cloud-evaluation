@@ -102,7 +102,7 @@ rotation_matrix = np.array([[1, 0, 0, 0],
 
 pcd_corrected = pcd_raw.transform(rotation_matrix)
 
-'''
+
 # Step 2: Extract color data
 colors = np.asarray(pcd_raw.colors)  # Extract the colors
 
@@ -129,9 +129,9 @@ cl, ind = filtered_pcd.remove_statistical_outlier(nb_neighbors = 20, std_ratio=6
 pcd = filtered_pcd.select_by_index(ind)
 
 
-# o3d.visualization.draw_geometries([pcd])
-# o3d.io.write_point_cloud("../POINT CLOUD/MDE/location1.ply", pcd)
-'''
+o3d.visualization.draw_geometries([pcd])
+o3d.io.write_point_cloud("../POINT CLOUD/GLPN/location1.ply", pcd)
+
 
 # End timing
 end_time = time.time()
