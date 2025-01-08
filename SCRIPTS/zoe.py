@@ -7,7 +7,7 @@ from transformers import AutoImageProcessor, ZoeDepthForDepthEstimation
 import time
 
 start_time = time.time()
-IMAGE_PATH = "../OUTDOOR IMAGES/LOCATION1/FOR MONOCULAR DEPTH ESTIMATION/location1HQ.jpeg"
+IMAGE_PATH = "../OUTDOOR IMAGES/LOCATION1/FOR MONOCULAR DEPTH ESTIMATION/location4HQ.jpeg"
 image = Image.open(IMAGE_PATH)
 
 
@@ -48,16 +48,16 @@ depth = Image.fromarray(formatted)
 
 
 # VISUALIZE THE PREDICTION
-# fig, ax = plt.subplots(1,2)
-# ax[0].imshow(image)
-# ax[0].tick_params(left=False, bottom=False, labelleft=False, labelbottom=False)
-# ax[0].set_title("Original Image")
+fig, ax = plt.subplots(1,2)
+ax[0].imshow(image)
+ax[0].tick_params(left=False, bottom=False, labelleft=False, labelbottom=False)
+ax[0].set_title("Original Image")
 
-# ax[1].imshow(output, cmap='plasma')
-# ax[1].tick_params(left=False, bottom=False, labelleft=False, labelbottom=False)
-# ax[1].set_title("Processed Output - DPT")
-# plt.tight_layout()
-# plt.pause(5)
+ax[1].imshow(output, cmap='plasma')
+ax[1].tick_params(left=False, bottom=False, labelleft=False, labelbottom=False)
+ax[1].set_title("Processed Output - ZOE")
+plt.tight_layout()
+plt.pause(5)
 
 # DEPTH IMAGE FOR OPEN3D
 width, height = image.size
@@ -127,8 +127,8 @@ cl, ind = filtered_pcd.remove_statistical_outlier(nb_neighbors = 20, std_ratio=6
 pcd = filtered_pcd.select_by_index(ind)
 
 
-o3d.visualization.draw_geometries([pcd])
-o3d.io.write_point_cloud("../POINT CLOUD/ZOE/location1.ply", pcd)
+# o3d.visualization.draw_geometries([pcd])
+# o3d.io.write_point_cloud("../POINT CLOUD/ZOE/location2.ply", pcd)
 
 # End timing
 end_time = time.time()

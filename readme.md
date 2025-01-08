@@ -8,8 +8,11 @@
 
 - Adrian Widłak
 - Jerzy Orlof
+- Piotr Sulikowski
   
   **Faculty of Computer Science and Telecommunications**, Cracow University of Technology, Cracow, Poland
+
+  **adrian.widlak@pk.edu.pl**
 
 
 ## Overview
@@ -20,18 +23,33 @@ Scripts and tools for processing the images, generating point clouds are also in
 
 ## Repository Structure
 
-- **/data**: Contains
+
+This repository contains all the necessary files and resources for the research project:
+
+- **/ENVIRONMENT**  
+  Contains a `.yaml` configuration file for setting up the proper Python environment using Anaconda.
+
+- **/POINT CLOUD**  
+  Includes generated point clouds based on Monocular Depth Estimation (MDE) models such as GLPN, ZOE, and DPT.
+
+- **/OUTDOOR IMAGES**  
+  A collection of outdoor images used for photogrammetry-based 3D reconstruction.
+
+- **/SCRIPTS**  
+  Contains Python scripts for generating point clouds based on single-image depth assessment.
+
 
 ## Citation
 
 If you use this data in your research, please cite the following article:
 
 ```bibtex
-@inprocedings{WidlakM2024,
-  title={Evaluation of outdoor 3D reconstruction using Monocular Depth Estimation and Photogrammetry Point Cloud},
-  author={Adrian Widłak, Jerzy Orlof},
-  journal={},
-  year={2024},
-  publisher={},
-  note={}
+
+@article{Widlak2025,
+  title     = {Evaluation of outdoor 3D reconstruction using Monocular Depth Estimation and Photogrammetry Point Cloud},
+  author    = {Adrian Widłak and Jerzy Orlof and Piotr Sulikowski},
+  year      = {2025},
+  note      = {To appear in IEEE Transactions on Geoscience and Remote Sensing [if applicable]},
 }
+
+```
