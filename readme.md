@@ -6,13 +6,15 @@
 
 ## Authors
 
-- Adrian Widłak
-- Jerzy Orlof
-- Piotr Sulikowski
-  
-  **Faculty of Computer Science and Telecommunications**, Cracow University of Technology, Cracow, Poland
+**Adrian Widlak** and **Jerzy Orlof**  
+**Faculty of Computer Science and Telecommunications**  
+Cracow University of Technology, Cracow, Poland  
 
-  **adrian.widlak@pk.edu.pl**
+**Piotr Sulikowski**  
+**West Pomeranian University of Technology in Szczecin**  
+Faculty of Information Technology and Computer Science  
+
+📧 Email: [adrian.widlak@pk.edu.pl](mailto:adrian.widlak@pk.edu.pl)
 
 
 ## Overview
