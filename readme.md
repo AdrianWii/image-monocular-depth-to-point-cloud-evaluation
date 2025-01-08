@@ -1,6 +1,6 @@
 # Evaluation of outdoor 3D reconstruction using Monocular Depth Estimation and Photogrammetry Point Cloud
 
-<!-- [![DOI]()]() -->
+[![DOI](https://zenodo.org/badge/851808883.svg)](https://doi.org/10.5281/zenodo.14617926)
 
 <!-- ![Cover Image](cover.png) -->
 
